@@ -18,7 +18,7 @@ Enligt uppgiften skall
 	v(x,y) = x^3 + axy^2 - 3x^2y + y^3
 \end{equation*}
 
-bestämmas som imaginärdelen av en holomorf funktion $f(z) = f(x + iy) = u + iv$. Eftersom $f$ skall vara holomorf så kommer $u$ och $v$ att vara harmoniska (enl. sats 3.22\cite{boken},) vilket medför att $\nabla^2v = v''_{xx} + v''_{yy} = 0$, där derivatorna ges av
+bestämmas som imaginärdelen av en holomorf funktion $f(z) = f(x + iy) = u + iv$. Eftersom $f$ skall vara holomorf så kommer $u$ och $v$ att vara harmoniska (enl. sats 3.22,) vilket medför att $\nabla^2v = v''_{xx} + v''_{yy} = 0$, där derivatorna ges av
 
 \begin{align*}
 	&\begin{cases}
@@ -69,17 +69,17 @@ Med hjälp av Eulers formel för sinusfunktionen kan uppgiften skrivas enligt
 Utför variabelbytet $w = e^{iz}$
 
 \begin{align*}
-	&e^{iz} - e^{-iz} = -4 \iff w^2 - 1 + 4w = 0\\
+	&e^{iz} - e^{-iz} = -4 \iff w - \frac{1}{w} = -4 \iff w^2 - 1 + 4w = 0\\
 	&\implies	\begin{cases}
 					w_1 = -2 + \sqrt{5}\\
-					w_1 = -2 - \sqrt{5}
-				\end{cases}.
+					w_2 = -2 - \sqrt{5}
+				\end{cases}..
 \end{align*}
 
 Sedan fås $z_1$ från det tidigare variabelbytet
 
 \begin{align*}
-	w_1 &= e^{iz_1} \implies iz_1 = \text{Log}(-2 + \sqrt{5})\\
+	w_1 = e^{iz_1} \implies iz_1 &= \text{Log}(-2 + \sqrt{5})\\
 		&= \ln|-2 + \sqrt{5}| + i\text{Arg}(-2 + \sqrt{5})\\
 		&= \ln(2+\sqrt{5}) + i(0 + 2\pi k), k \in \mathbb{Z}\\
 	 &\implies z_1 = 2\pi k - i\ln(2+\sqrt{5}), k \in \mathbb{Z}.
@@ -88,11 +88,29 @@ Sedan fås $z_1$ från det tidigare variabelbytet
 Här används principalgrenen av den komplexa logaritmen eftersom $w_1$ ligger på den positivia reella axeln. Samma räkningar kan utföras för att få fram $z_2$, dock används istället den naturliga grenen av logaritmen då $w_2$ ligger på den negativa reella axeln.
 
 \begin{align*}
-	w_2 &= e^{iz_2} \implies iz_2 = \log(-2 - \sqrt{5})\\
+	w_2 = e^{iz_2} \implies iz_2 &= \log(-2 - \sqrt{5})\\
 		&= \ln(2+\sqrt{5}) + i\text{arg}(-2 - \sqrt{5})\\
 	 &\implies z_2 = \pi + 2\pi k - i\ln(2 + \sqrt{5}), k \in \mathbb{Z}.
 \end{align*}
 
+Sammantaget kan lösningen skrivas som
+
+\begin{equation*}
+	z = \pi k - i\ln(2+\sqrt{5}), k \in \mathbb{Z}.
+\end{equation*}
+
+Maple ger följande resultat när programmet försöker lösa samma uppgift (se Figur \ref{fig:maple2}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.75\textwidth]{maple2.png}
+	\caption{Utskrifter från Maple vid lösningen av $\sin(z) = 2i$.}
+	\label{fig:maple2}
+\end{figure}
+
+I Figur \ref{fig:maple2} representerar $B2$ ett obestämt binärt värde och $Z2$ ett obestämt heltal. Maple kommer alltså fram till samma resultat som vid handräkning.
+
+\newpage
 \section*{1.3}
 \subsection*{a)}
 
@@ -103,7 +121,7 @@ Här används principalgrenen av den komplexa logaritmen eftersom $w_1$ ligger p
 	\label{fig:1_2}
 \end{figure}
 
-I Figur \ref{fig:1_2} ses det att $y = \text{Im}(\text{Log}(e^{it}))$ är $2\pi$-periodisk. Detta för att principalgrenen av logaritmen $\text{Log}(z)$ bara är definierad för $-\pi (+2\pi k)< \text{Arg}(z) < \pi (+2\pi k), k \in \mathbb{Z}$. Definitionen av den komplexa logaritmen ger
+I Figur \ref{fig:1_2} ses det att $y = \text{Im}(\text{Log}(e^{it}))$ är $2\pi$-periodisk. Detta för att principalgrenen av logaritmen $\text{Log}(z)$ bara är definierad för $-\pi (+2\pi k_1)< \text{Arg}(z) < \pi (+2\pi k_2), (k_1,k_2) \in \mathbb{Z}$. Definitionen av den komplexa logaritmen ger
 
 \begin{align*}
 	\text{Log}(e^{it})	&= \ln|e^{it}| + i\text{Arg}(e^{it})\\
@@ -111,7 +129,7 @@ I Figur \ref{fig:1_2} ses det att $y = \text{Im}(\text{Log}(e^{it}))$ är $2\pi$
 						&= it, -\pi < t < \pi (+2\pi k).
 \end{align*}
 
-Funktionen $y = \text{Im}(\text{Log}(e^{it}))$ blir då linjär $y = Im(it) = t)$ för $-\pi < t < \pi (+2\pi k)$, vilket motsvarar de linjära streckorna i Figur \ref{fig:1_2}. Därutöver är inte funktionen definierad då $t$ är en mulitpel av $2\pi$ eftersom Log ej är definierad då, vilket resulterar i en diskontinuitet i grafen som maple inte klarar av att rita ut.
+Funktionen $y = \text{Im}(\text{Log}(e^{it}))$ blir då linjär $y = Im(it) = t$ för $-\pi < t < \pi (+2\pi k)$, vilket motsvarar de linjära streckorna i Figur \ref{fig:1_2}. Därutöver är inte funktionen definierad då $t$ är en udda mulitpel av $\pi$ eftersom Log ej är definierad då talet ligger på den negativa reella axeln, vilket resulterar i en diskontinuitet i grafen som maple inte klarar av att rita ut.
 
 \subsection*{b)}
 
@@ -122,7 +140,7 @@ Definitionen av den komplexa logaritmen ger
 						&= \text{z på polär form},
 \end{align*}
 
-men eftersom $-\pi < \text{Arg} < \pi$ så uppfyller alla komplexa tal, förutom de på den negativa reella axeln $e^{Log(z)} = z$
+men eftersom $-\pi < \text{Arg} < \pi$ så uppfyller alla komplexa tal, förutom de på den negativa reella axeln, $e^{Log(z)} = z$.
 
 \subsection*{c)}
 
@@ -183,11 +201,11 @@ Integranden är återigen uppbyggd av holomorfa funktioner och är då själv ho
 	z^2 = -4 \implies z = \pm 2i,
 \end{align*}
 
-vilket båda ligger innanför områden som omsluts av $\gamma$, integranden kan då delas upp med partialbråksuppdelning efter vilket Cauchys Integralformel kan användas för att beräkna kurvintegralen på varje delområde (som endast innehåller en singularitet).
+Nollställena ligger båda innanför området som omsluts av $\gamma$, integranden kan då delas upp med partialbråksuppdelning efter vilket Cauchys Integralformel kan användas för att beräkna kurvintegralen på varje delområde (som nu endast innehåller en singularitet).
 
 \begin{align*}
 	&\frac{e^z}{z^2 + 4} = \frac{e^z}{(z-2i)(z+2i)} = \frac{A}{z-2i} + \frac{B}{z+2i} = \frac{Az + i2A + Bz - i2B}{z^2 + 4}\\
-	\implies	\begin{cases}
+	&\implies	\begin{cases}
 					A = B\\
 					2Az = e^z \implies A = e^z/2z = B
 				\end{cases}.
@@ -199,7 +217,7 @@ Integralen kan då skrivas som
 	\int_\gamma \frac{e^z}{z^2 + 4} = \int_\gamma \frac{\frac{e^z}{2z}}{z-2i}dz + \int_\gamma \frac{\frac{e^z}{2z}}{z+2i}dz.\label{eq:uppdelad}
 \end{align}
 
-Sätt $f(z) = \frac{e^z}{2z}$, då kan den uppdelade ingralen i (\ref{eq:uppdelad}) skrivas som
+Sätt $f(z) = \frac{e^z}{2z}$, då kan den uppdelade integralen i (\ref{eq:uppdelad}) skrivas som
 
 \begin{align*}
 	(\ref{eq:uppdelad}) &\iff \int_\gamma \frac{f(z)}{z-2i}dz + \int_\gamma \frac{f(z)}{z+2i}dz\\
@@ -337,26 +355,28 @@ Lösningen kan då skrivas som
 			&= 2\cdot5^n\sin\left(\frac{\pi}{4}n\right)
 \end{align*}
 
-Värdet på $x_{32}$ kan då beräknas för hand, i Maple, samt i Matlab
-
-\begin{equation*}
-	x_{32} = 2\cdot5^{32}\sin\left(\frac{\pi}{4}n\left) = 2\cdot5^{32}\cdot 0 = 0
-\end{equation*}
+Värdet på $x_{32}$ beräknas i Maple samt Matlab.
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.75\textwidth]{maple.png}
-	\caption{utskrifter från Maple vid beräknings av $x_{32}$}
+	\caption{Utskrifter från Maple vid beräknings av $x_{32}$}
 	\label{fig:maple}
 \end{figure}
 
 \begin{figure}[h!]
 	\centering
-	%\includegraphics[width=0.75\textwidth]{matlab.png}
-	\caption{utskifter från Matlab vid beräknings av $x_{32}$}
-	\label{fig:maple}
+	\includegraphics[width=0.75\textwidth]{matlab.png}
+	\caption{Utskifter från Matlab vid beräknings av $x_{32}$}
+	\label{fig:matlab}
 \end{figure}
 
+Beräknas $x_{32}$ istället för hand fås
+
+\begin{equation*}
+	x_{32} = 2\cdot5^{32}\sin\left(\frac{\pi}{4}n\right) = 2\cdot5^{32}\cdot 0 = 0.
+\end{equation*}
+
+Anledningen till varför resultatet skiljer så mycket för Matlab beror troligtvis på att programmet använder numeriska metoder för att approximera $\sin(x)$. I Figur \ref{fig:matlab} blir $\sin(8\pi)$ troligtvis mycket nära $0$, nog nära för att det inte skall spela roll i de flesta sammanhang, men i beräkningen av $x_{32}$ multiplicerar vi ett mycket stort tal $5^{32}$ med något som är nära noll och resultatet blir då $-4.6\cdot10^7$. Det här problemet grundar sig i att datorer idag och Matlab i synnerhet använder sig av 64 bitar för att representera ett decimaltal. Det betyder att det finns en fix precision för heltalsdelen och decimaldelen av ett tal och detta leder till fel vid multiplikation av tal som skiljer sig många storleksordningar. Dock verkar Maple använda sig av mer analytiska metoder för att beräkna $\sin(x)$ och leder därför inte av samma problem.
 
 \end{document}
-
