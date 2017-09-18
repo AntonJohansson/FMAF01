@@ -213,7 +213,7 @@ Lös rekursionsekvationen
 
 \begin{equation}
 	\begin{cases}
-		x_{n+2} - 6x_{n+2} + 9x_n = 12n, n \in \mathbb{Z}\\
+		x_{n+2} - 6x_{n+1} + 9x_n = 12n, n \in \mathbb{Z}_+\\
 		x_0 = x_1 = 0
 	\end{cases}\label{eq:rek_ekv_1}.
 \end{equation}
@@ -271,7 +271,7 @@ Begynnelsevilkoren för talföljden ger därefter konstanterna $C_1$ och $C_2$
 	\end{cases}
 \end{align*}
 
-Sammtaget blir den allmänna lösningen
+Sammantaget blir den allmänna lösningen
 
 \begin{equation*}
 	x_n = -3^{n+1} + n3^n + 3n + 3.
@@ -279,9 +279,84 @@ Sammtaget blir den allmänna lösningen
 
 \subsection*{1.6}
 
+Lös rekursionsekvationen
 
+\begin{equation}
+	\begin{cases}
+		x_{n} - 10x_{n-1} + 50x_{n-2} = 0, n = 2,3,...\\
+		x_0 = x_1 = 10
+	\end{cases}\label{eq:rek_ekv_2}.
+\end{equation}
 
+Den homogena ekvationen (\ref{eq:rek_ekv_2}) har följande utseende
+
+\begin{align*}
+	1 - 10r^{-1} + 50r^{-2} = 0 &\iff 1 - \frac{10}{r} + \frac{50}{r^2} = 0\\
+								&\iff r^2 - 10r + 50 = 0\\
+								&\implies	\begin{cases}
+												r_1 = 5 + 5i\\
+												r_2 = 5 - 5i
+											\end{cases}.
+\end{align*}
+
+Eftersom den karakteristiska ekvationen har två separata nollställen så ges lösningen till den homogena ekvationen av (enl. sats 4.14)
+
+\begin{equation*}
+	x_n = C_1r_1^n + C_2r_2^n
+\end{equation*}
 	
+Begynnelsevilkoren ger sedan värdet på konstanterna $C_1$ och $C_2$
+
+\begin{align*}
+	\begin{cases}
+		x_0 = 0\\
+		x_1 = 10
+	\end{cases}
+	&\iff
+	\begin{cases}
+		C_1 + C_2 = 0\\
+		C_1r_1 + C_2r_2 = 10
+	\end{cases}\\
+	&\iff
+	\begin{cases}
+		C_2 = -C_1\\
+		C_1r_1 - C_1r_2 = 10
+	\end{cases}\\
+	&\implies C_1 = \frac{10}{r_1 - r_2} = \frac{10}{10i} = \frac{1}{i} = -i\\
+	&\implies C_2 = i
+\end{align*}
+
+Lösningen kan då skrivas som
+
+\begin{align*}
+	x_n		&= -i(5+5i)^n + i(5-5i)^n\\
+			&= -i(5(1+i))^n + i(5(1-i))^n\\
+			&= -i(5e^{i\frac{\pi}{4}})^n + i(5e^{i-\frac{\pi}{4}})^n\\
+			&= -i5^n(e^{i\frac{\pi}{4}n} - e^{-i\frac{\pi}{4}n})\\
+			&= -i5^n\sin\left(\frac{\pi}{4}n\right)2i\\
+			&= 2\cdot5^n\sin\left(\frac{\pi}{4}n\right)
+\end{align*}
+
+Värdet på $x_{32}$ kan då beräknas för hand, i Maple, samt i Matlab
+
+\begin{equation*}
+	x_{32} = 2\cdot5^{32}\sin\left(\frac{\pi}{4}n\left) = 2\cdot5^{32}\cdot 0 = 0
+\end{equation*}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.75\textwidth]{maple.png}
+	\caption{utskrifter från Maple vid beräknings av $x_{32}$}
+	\label{fig:maple}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	%\includegraphics[width=0.75\textwidth]{matlab.png}
+	\caption{utskifter från Matlab vid beräknings av $x_{32}$}
+	\label{fig:maple}
+\end{figure}
+
 
 \end{document}
 
