@@ -94,13 +94,36 @@ Vilket stämmer överens med det tidigare resultatet.
 \section*{1.3}
 \subsection*{c)}
 
+% 2 fall
+%	z  + iArg(e^z) = z
+%		 iArg(e^z) = 0
+%		 -> z ligger på +pos reella axeln.
+%	-z + iArg(e^(-z)) = z
+%		 iArg(e^-z) = 2z
+%
+
 På liknande vis som i förra deluppgiften används definitionen av den komplexa logaritmen för att utveckla uttrycket
 
+\begin{align}
+	\text{Log}(e^z) = \ln|e^z| + i\text{Arg}(e^z).\label{eq:13c}
+\end{align}
+
+Om $z = x + iy$, kan (\ref{eq:13c}) skrivas som
+
+\begin{align}
+	\ln|e^{x+iy}| + i\text{Arg}(e^{x+iy}) &= \ln(|e^x||e^{iy}|) + i\text{Arg}(e^{x+iy})\\
+										  &= \ln(e^x\cdot1) + i\text{Arg}(e^xe^{iy})\\
+			   &= x + i\text{Arg}(e^xe^{iy}).\label{eq:13c2}
+\end{align}
+
+Enligt grundantagandet att $\text{Log}(e^z) = z$ så måste det gälla att
+
 \begin{align*}
-	\text{Log}(e^z) = \ln|e^z| + i\text{Arg}(e^z)  = \ln(e^{|z|}) + i\text{Arg}(e^z) = |z| + i\text{Arg}(e^z) = 0.
+	(\ref{eq:13c2}) &\iff x + i\text{Arg}(e^xe^{iy}) = x + iy\\
+					&\iff y = \text{Arg}(e^xe^{iy}) \implies y = \text{Arg}(e^{iy}).
 \end{align*}
 
-Den sista likheten gäller enligt uppgiften som gavs. Då måste $i\text{Arg}(z) = 0$ och $z$ måste ligga på den positiva reella axeln.
+Definitionen av principalgrenen av argumentet ger då att $-\pi < y < \pi$, vilket kan sammanfattas som $-\pi < \text{Im}(z) < \pi$.
 
 \section*{1.4}
 \subsection*{b)}
@@ -220,8 +243,10 @@ Värdet på $x_{32}$ beräknas i Maple samt Matlab.
 Beräknas $x_{32}$ istället för hand fås
 
 \begin{equation*}
-	x_{32} = 2\cdot5^{32}\sin\left(\frac{\pi}{4}n\right) = 2\cdot5^{32}\cdot 0 = 0.
+	x_{32} = 2\cdot\sqrt{50}^{32}\sin\left(\frac{\pi}{4}n\right) = 2\cdot\sqrt{50}^{32}\cdot 0 = 0.
 \end{equation*}
+
+% Matlab approximerar pi med en ändlig serie! sin(2pi) blir då ungefär 0
 
 Anledningen till varför resultatet skiljer så mycket för Matlab beror troligtvis på att programmet använder numeriska metoder för att approximera $\sin(x)$. I Figur \ref{fig:matlab} blir $\sin(8\pi)$ troligtvis mycket nära $0$, nog nära för att det inte skall spela roll i de flesta sammanhang, men i beräkningen av $x_{32}$ multiplicerar vi ett mycket stort tal $5^{32}$ med något som är nära noll och resultatet blir då $-4.6\cdot10^7$. Det här problemet grundar sig i att datorer idag och Matlab i synnerhet använder sig av 64 bitar för att representera ett decimaltal. Det betyder att det finns en fix precision för heltalsdelen och decimaldelen av ett tal och detta leder till fel vid multiplikation av tal som skiljer sig många storleksordningar. Dock verkar Maple använda sig av mer analytiska metoder för att beräkna $\sin(x)$ och leder därför inte av samma problem.
 
