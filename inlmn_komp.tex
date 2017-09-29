@@ -140,7 +140,7 @@ Integranden är återigen uppbyggd av holomorfa funktioner och är då själv ho
 	z^2 = -4 \implies z = \pm 2i,
 \end{align*}
 
-Nollställena ligger båda innanför området som omsluts av $\gamma$, integranden kan då delas upp med partialbråksuppdelning efter vilket Cauchys Integralformel kan användas för att beräkna kurvintegralen på varje delområde (som nu endast innehåller en singularitet).
+Nollställena ligger båda innanför området som omsluts av $\gamma$, integranden måste då partialbråksuppdelas
 
 \begin{align*}
 	&\frac{e^z}{z^2 + 4} = \frac{e^z}{(z-2i)(z+2i)} = \frac{A}{z-2i} + \frac{B}{z+2i} = \frac{Az + i2A + Bz - i2B}{z^2 + 4}\\
@@ -150,7 +150,7 @@ Nollställena ligger båda innanför området som omsluts av $\gamma$, integrand
 				\end{cases}.
 \end{align*}
 
-Integralen kan då skrivas som
+I och med att integrandens nollställen båda innesluts av $\gamma$, så kan den ursprungliga integralen skrivas om med hjälp av Cauchys Integralformel
 
 \begin{align}
 	\int_\gamma \frac{e^z}{z^2 + 4} = \int_\gamma \frac{\frac{e^z}{2z}}{z-2i}dz + \int_\gamma \frac{\frac{e^z}{2z}}{z+2i}dz.\label{eq:uppdelad}
