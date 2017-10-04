@@ -16,10 +16,11 @@
     "amssymb"
     "graphicx"
     "epstopdf"
-    "caption"
-    "subcaption")
+    "placeins")
    (LaTeX-add-labels
     "eq:22fourier"
-    "fig:serie22"))
+    "fig:serie22"
+    "fig:funk23"
+    "fig:fourier23"))
  :latex)
 

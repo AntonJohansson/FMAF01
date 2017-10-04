@@ -82,12 +82,8 @@ INPUT C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/generic/obe
 INPUT C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/pdftexcmds.sty
 INPUT C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
 INPUT C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
-INPUT C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption.sty
-INPUT C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption.sty
-INPUT C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption3.sty
-INPUT C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption3.sty
-INPUT C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/subcaption.sty
-INPUT C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/subcaption.sty
+INPUT C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/placeins/placeins.sty
+INPUT C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/placeins/placeins.sty
 INPUT inlm.aux
 INPUT inlm.aux
 OUTPUT inlm.aux

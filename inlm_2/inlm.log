@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.4)  4 OCT 2017 11:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.4)  4 OCT 2017 14:22
 entering extended mode
 **./inlm.tex
 (inlm.tex
@@ -566,76 +566,47 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ))
-("C:\Users\Anton Johansson\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\
-caption.sty"
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-
-("C:\Users\Anton Johansson\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\
-caption3.sty"
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen115
-\captionmargin@=\dimen116
-\captionwidth=\dimen117
-\caption@tempdima=\dimen118
-\caption@indent=\dimen119
-\caption@parindent=\dimen120
-\caption@hangindent=\dimen121
-)
-\c@ContinuedFloat=\count101
-)
-("C:\Users\Anton Johansson\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\
-subcaption.sty"
-Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
-\c@subfigure=\count102
-\c@subtable=\count103
-) (inlm.aux
-
-LaTeX Warning: Label `fig:serie22' multiply defined.
-
-
-LaTeX Warning: Label `fig:serie22' multiply defined.
-
-)
+("C:\Users\Anton Johansson\AppData\Local\Programs\MiKTeX 2.9\tex\latex\placeins
+\placeins.sty"
+Package: placeins 2005/04/18  v 2.2
+) (inlm.aux)
 \openout1 = `inlm.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 ("C:\Users\Anton Johansson\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\s
 upp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
-\scratchdimen=\dimen122
+\scratchcounter=\count101
+\scratchdimen=\dimen115
 \scratchbox=\box28
-\nofMPsegments=\count105
-\nofMParguments=\count106
+\nofMPsegments=\count102
+\nofMParguments=\count103
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count107
-\MPscratchDim=\dimen123
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen116
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
 \everyMPtoPDFconversion=\toks23
 )
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 18.
+LaTeX Font Info:    Try loading font information for U+msa on input line 17.
 
 ("C:\Users\Anton Johansson\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts
 \umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 18.
+LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 
 ("C:\Users\Anton Johansson\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts
 \umsb.fd"
@@ -652,13 +623,13 @@ Package epstopdf Info: Source file: <serie22.eps>
 (epstopdf)                    size: 18785 bytes
 (epstopdf)             Command: <epstopdf --outfile=serie22-eps-converted-to.pd
 f serie22.eps>
-(epstopdf)             \includegraphics on input line 140.
+(epstopdf)             \includegraphics on input line 139.
 Package epstopdf Info: Output file is already uptodate.
  <serie22-eps-converted-to.pdf, id=20, 421.575pt x 316.18124pt>
 File: serie22-eps-converted-to.pdf Graphic file (type pdf)
 
 <use serie22-eps-converted-to.pdf>
-Package pdftex.def Info: serie22-eps-converted-to.pdf used on input line 140.
+Package pdftex.def Info: serie22-eps-converted-to.pdf used on input line 139.
 (pdftex.def)             Requested size: 258.75pt x 194.06676pt.
  [3 <./serie22-eps-converted-to.pdf>]
 [4]
@@ -670,13 +641,13 @@ Package epstopdf Info: Source file: <funk23.eps>
 (epstopdf)                    size: 10479 bytes
 (epstopdf)             Command: <epstopdf --outfile=funk23-eps-converted-to.pdf
  funk23.eps>
-(epstopdf)             \includegraphics on input line 233.
+(epstopdf)             \includegraphics on input line 232.
 Package epstopdf Info: Output file is already uptodate.
  <funk23-eps-converted-to.pdf, id=38, 421.575pt x 316.18124pt>
 File: funk23-eps-converted-to.pdf Graphic file (type pdf)
 
 <use funk23-eps-converted-to.pdf>
-Package pdftex.def Info: funk23-eps-converted-to.pdf used on input line 233.
+Package pdftex.def Info: funk23-eps-converted-to.pdf used on input line 232.
 (pdftex.def)             Requested size: 345.0pt x 258.75406pt.
 
 
@@ -690,60 +661,54 @@ Package epstopdf Info: Source file: <fourier23.eps>
 (epstopdf)                    size: 83679 bytes
 (epstopdf)             Command: <epstopdf --outfile=fourier23-eps-converted-to.
 pdf fourier23.eps>
-(epstopdf)             \includegraphics on input line 239.
+(epstopdf)             \includegraphics on input line 238.
 Package epstopdf Info: Output file is already uptodate.
 <fourier23-eps-converted-to.pdf, id=39, 421.575pt x 316.18124pt>
 File: fourier23-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fourier23-eps-converted-to.pdf>
-Package pdftex.def Info: fourier23-eps-converted-to.pdf used on input line 239.
+Package pdftex.def Info: fourier23-eps-converted-to.pdf used on input line 238.
 
 (pdftex.def)             Requested size: 345.0pt x 258.75406pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5]
+[5] [6 <./funk23-eps-converted-to.pdf> <./fourier23-eps-converted-to.pdf>]
+[7
 
-LaTeX Warning: Text page 6 contains only floats.
-
-[6 <./funk23-eps-converted-to.pdf> <./fourier23-eps-converted-to.pdf>]
-(inlm.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+] [8] [9] (inlm.aux) ) 
 Here is how much of TeX's memory you used:
- 4525 strings out of 493323
- 65491 string characters out of 3125673
- 140684 words of memory out of 3000000
- 7990 multiletter control sequences out of 15000+200000
+ 3429 strings out of 493323
+ 45611 string characters out of 3125673
+ 115562 words of memory out of 3000000
+ 6898 multiletter control sequences out of 15000+200000
  11392 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,14n,39p,320b,279s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Anton Johansson\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecrm0700.pk> <C:\Users\Anton Johansson\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\jknappen\ec\dpi600\eccc1000.pk> <C:\Users\Anton Johansson\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Anton 
-Johansson\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.
+ 42i,14n,26p,321b,233s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Anton Johansson\AppData\Local\MiKTeX\2.9\fonts
+\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk> <C:\Users\Anton Johansson\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1000.pk> <C:\Users\Anton 
+Johansson\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.
 pk> <C:\Users\Anton Johansson\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen
-\ec\dpi600\ecbx1440.pk><C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Anton Johansson/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/
-Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmmi5.pfb><C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Anton Johansson/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Anton Johanss
-on/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C
-:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr7.pfb><C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Anton Johansson/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Anton
- Johansson/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbol
-s/msbm10.pfb>
-Output written on inlm.pdf (6 pages, 244075 bytes).
+\ec\dpi600\ecbx1200.pk> <C:\Users\Anton Johansson\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk><C:/Users/Anton Johansson/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ant
+on Johansson/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb><C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Anton Johansson/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Anton Johansson
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
+/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr5.pfb><C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Anton Johansson/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Anton J
+ohansson/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7
+.pfb><C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/symbols/msbm10.pfb>
+Output written on inlm.pdf (9 pages, 258721 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
+ 202 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

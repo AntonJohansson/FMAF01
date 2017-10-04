@@ -8,8 +8,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{epstopdf}
-\usepackage{caption}
-\usepackage{subcaption}
+\usepackage{placeins}
 
 \begin{document}
 
@@ -231,24 +230,122 @@ tidigare blir
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\linewidth]{funk23.eps}
-  \caption{}
-  \label{fig:serie22}
+  \caption{$f(t)$ på intervallet $-2\pi \leq t \leq 2\pi$.}
+  \label{fig:funk23}
 \end{figure} 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\linewidth]{fourier23.eps}
-  \caption{}
-  \label{fig:serie22}
+  \caption{Gränsfunktionen till $\mathcal{FS}_f^{\text{trig}}(t)$ samt
+    Fouriersumman för $20$ termer $S_{20}(t)$.}
+  \label{fig:fourier23}
 \end{figure} 
 
+\FloatBarrier
+
 \subsection*{c)}
+
+För att bestämma summan $\sum_{k=1}^{+\infty}\frac{\sin(2k)}{k}$ utnyttjas
+Fourierserien för $f(t)$ vid tidpunkten $t = \pi$.
+
+\begin{align*}
+  &\frac{\pi}{2} = 2 + 2\sum_{k=1}^{+\infty}(-1)^k\frac{\sin(2k)}{k}\cos(\pi k)\\
+  &\iff \frac{\pi}{4} - 1 = \sum_{k=1}^{+\infty}(-1)^k\frac{\sin(2k)}{k}(-1)^k\\
+  &\iff \sum_{k=1}^{+\infty}\frac{\sin(2k)}{k} = \frac{\pi}{4} - 1.
+\end{align*}
+
+\noindent Därefter ska summan $\sum_{k=1}^{+\infty}\frac{\sin^2(2k)}{k^2}$ beräknas. Här
+används Parsevals formel för trigonometriska Fourierserien
+
+\begin{align*}
+  \frac{1}{T}\int_{\text{p}}\left| f(t) \right|^2 dt = |c_0|^2 + \frac{1}{2} \sum_{k=1}^{+\infty} \left( |a_k|^2 + |b_k|^2\right).
+\end{align*}
+
+\noindent med $a_k = 2(-1)^k\frac{\sin(2k)}{k}$ och $b_k = 0$ fås då
+
+\begin{align*}
+  4 + \frac{1}{2}\sum_{k=1}^{+\infty}4\left| (-1)^k\right|^2\left|\frac{\sin(2k)}{k}\right|^2 &= \frac{1}{2\pi}\int_0^{2\pi}|f(t)|^2dt\\
+  \iff 4 + 2\sum_{k=1}^{+\infty}\frac{\sin^2(2k)}{k^2} &= \frac{1}{2\pi}\int_{\pi-2}^{\pi+2}|\pi|^2dt = \frac{1}{2\pi}\left[\pi^2t\right]_{\pi-2}^{\pi+2}\\
+  &=\frac{1}{2\pi}\left(\pi^3 + 2\pi^2 - \pi^3 + 2\pi^2\right) = 2\pi,
+\end{align*}
+
+\noindent vilket efter lite omskrivning ger
+
+\begin{align*}
+  \sum_{k=1}^{+\infty}\frac{\sin^2(2k)}{k^2} = \pi - 2
+\end{align*}
+
 \subsection*{d)}
+
+Varken funktionen $f(t)$ eller gränsfunktionen till $\mathcal{FS}_f^{\text{trig}}(t)$ är kontinuerliga på intervallet $0 < t < 2\pi$, däremot är Fouriersumman för $n$-st termer $S_n(t)$ det. 
+
 \subsection*{e)}
 
+Fourierserien konvergerar inte likformigt mot sin gränsfunktion på intervallet
+$0 < t < 2\pi$. Detta beror dels på gibs fenom, men även på diskontinuiteterna i
+gränsfunktionen, vilket medför att supremumnormen alltid är större eller lika
+med $\pi/2$, och serien kan därmed inte konvergera likformigt.
+
 \section*{2.4}
+
+Enligt uppgiften definieras dilogaritmen som
+
+\begin{align*}
+  \text{Li}_2 = \sum_{k=1}^{+\infty}\frac{z^k}{k^2}.
+\end{align*}
+
 \subsection*{a)}
+
+För vilka värden konvergerar dilogaritmen?
+
+Kvotestet ger här
+
+\begin{align*}
+  \kappa = \lim_{k\to\infty}\frac{\left|\frac{z^{k+1}}{(k+1)^2}\right|}{\left|\frac{z^k}{k^2}\right|} = \lim_{k\to\infty}\left| \frac{z^{k+1}k^2}{z^k(k+1)^2}\right| = |z|\lim_{k\to\infty}\frac{k^2}{(k+1)^2} = |z|.
+\end{align*}
+
+\noindent Dilogaritmen konvergerar för alla $z$ som uppfyller $\kappa < 1$, d.v.s. då $|z|
+< 1$. Alltså för alla $z$ som innesluts av enhetscirkeln.
+
 \subsection*{b)}
+
+\begin{align*}
+  \text{Li}\left(\frac{1}{2}\right)_2 \approx \sum_{k=1}^4\frac{(1/2)^k}{k^2} \approx 0.5802951.
+\end{align*}
+
+En uppskattning av detta fel fås genom att approximera serien
+
+\begin{align*}
+  \sum_{k=1}^{+\infty}\frac{(1/2)^k}{k^2} &= \sum_{k=1}^{+\infty}\frac{1}{2^kk^2} \leq \sum_{k=1}^{+\infty}\frac{1}{2^k}\cdot = \frac{1}{2}\sum_0^{+\infty}\frac{1}{2^k}\\
+                                          &= \frac{1}{2}\cdot\frac{1}{1-1/2} = 1
+\end{align*}
+
 \subsection*{c)}
+
+Om
+
+\begin{align*}
+  \text{Li}_2 \approx \sum_{k=1}^{N}\frac{1}{k^2}
+\end{align*}
+
+\noindent ska ha ett lika litet fel som i föregående uppgiften, d.v.s. ett fel på $0.0025$
+så $N$ tas fram med hjälp av resttermen för serien
+
+\begin{align*}
+  r_N \leq 0.0025 \iff \sum_{N+1}^{+\infty}\frac{1}{k^2} \leq 0.0025.
+\end{align*}
+
+\noindent För att approximera $r_N$ görs en integraluppskattning
+
+\begin{align*}
+  r_N &= \sum_{N+1}^{+\infty}\frac{1}{k^2} \leq \int_N^{+\infty}\frac{1}{x^2}dx = \left[-\frac{1}{x}\right]_N^{+\infty}\\
+  &= \left(-0 + \frac{1}{N}\right) \leq 0.0025 \implies N \geq 400.
+\end{align*}
+
+\noindent Det krävs alltså minst 400 termer för att få ett fel på 0.0025.
+
 \subsection*{d)}
+
+Maple används för att dubbelkolla resultatet från föregående två deluppgifter.
 
 \end{document}

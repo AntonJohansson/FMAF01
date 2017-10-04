@@ -1,12 +1,12 @@
 # Fdb version 3
-["pdflatex"] 1507110454 "inlm.tex" "inlm.pdf" "inlm" 1507110455
+["pdflatex"] 1507119743 "inlm.tex" "inlm.pdf" "inlm" 1507119744
   "C:/Users/Anton Johansson/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1507095287 31952 11a29bcccddef5d738bfbe36d5c27da2 ""
   "C:/Users/Anton Johansson/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1507095288 40136 1cdb3c6abfb44902f0697278497b88af ""
   "C:/Users/Anton Johansson/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1000.pk" 1507100965 25100 d8d51836580b68c452c85676fbaaf003 ""
   "C:/Users/Anton Johansson/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0700.pk" 1507101537 17000 c987cfd5a974854c2731311d852d7ca8 ""
   "C:/Users/Anton Johansson/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk" 1507095286 23808 4df9660dcdad3b4eedb2d7e14a5edf46 ""
   "C:/Users/Anton Johansson/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1507095260 4073452 745707d8385202494df86ac2e304a474 ""
-  "C:/Users/Anton Johansson/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1507110001 83721 56dfc66f96b4bc7777806d83f0266370 ""
+  "C:/Users/Anton Johansson/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1507111446 83721 56dfc66f96b4bc7777806d83f0266370 ""
   "C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecbx1200.tfm" 993061958 3200 b8d69bc738e5ef3e08cefeef3109ff56 ""
   "C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecbx1440.tfm" 993061960 3196 0b37fa3083e15c57cfa8c4ff52f2807a ""
   "C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/jknappen/ec/eccc1000.tfm" 993061980 2788 9da2d2e7e17b2a98c3aa301c9668a522 ""
@@ -63,9 +63,6 @@
   "C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/t1enc.def" 1492214942 10006 a90ba4035cf778f32f424e297d92e235 ""
   "C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/t1enc.dfu" 1492214942 11255 9d97362866549d3d3c994b5f28d1b9b5 ""
   "C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/utf8.def" 1492214942 7784 325a2a09984cb5c4ff230f9867145ad3 ""
-  "C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption.sty" 1463943104 66233 8b81cfab95a1f8fc2f0f6c89415b087a ""
-  "C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption3.sty" 1463943104 64866 1ea74c5f2d1685881497f021b8f186b2 ""
-  "C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/subcaption.sty" 1463943104 5038 413302044f9700cf65465d590c2f4ad1 ""
   "C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/graphics.cfg" 1465894292 1224 978390e9c2234eab29404bc21b268d1e ""
   "C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-def/pdftex.def" 1485037086 58250 3792a9d2d1d664ee8c742498e295b051 ""
   "C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphics.sty" 1492423183 15094 b288c52bd5d46d593af31dbc7e548236 ""
@@ -76,10 +73,11 @@
   "C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/epstopdf.sty" 1489938032 4167 fc50b4e5b185008bb9308b1ea4ce64d4 ""
   "C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty" 1489938032 7075 2fe3d848bba95f139de11ded085e74aa ""
   "C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty" 1489938032 22417 1d9df1eb66848aa31b18a593099cf45c ""
+  "C:/Users/Anton Johansson/AppData/Local/Programs/MiKTeX 2.9/tex/latex/placeins/placeins.sty" 1113865200 4087 636308456f60d2b31cbf97867db5708d ""
   "fourier23.eps" 1507109730 1613457 cc0725127f9ddaf3035fdeeb0b85732c ""
   "funk23.eps" 1507109739 1400939 5bd6062fd74fedd7ceff17c968dc7490 ""
-  "inlm.aux" 1507110454 641 9ad6a843e4b74634d394366712d8b2c9 ""
-  "inlm.tex" 1507110445 9065 f7d4f22c0d3b65a8276dd688b2edbc5d ""
+  "inlm.aux" 1507119744 738 faf4766e49832fcadcc7b08000f405f0 ""
+  "inlm.tex" 1507119743 12972 8963682642f33ae262254053a2ec53f1 ""
   "serie22.eps" 1507100488 50802 0d069887aaf3fa9176ff2d0c08bb22c1 ""
   (generated)
   "inlm.pdf"
