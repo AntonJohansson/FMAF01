@@ -13,6 +13,9 @@
 \begin{document}
 
 \section*{2.1}
+
+Resultatet för alla deluppgifter jämfördes med Maple (se appendix \ref{ap:maple}). För det mesta stämde resultatet överens med det som beräknades för hand. Däremot så sa Maple att g) konvergerar, vilket den inte gör enligt handräkning. Därutöver kände inte Maple igen serierna i e) och f).
+
 \subsection*{a)}
 För att se om serien $\sum_{k=2}^{+\infty}\frac{3}{k^2-k}$ konvergergerar
 används jämförelsetestet på gränsvärdesform med den kända (konvergenta) p-serien
@@ -23,8 +26,7 @@ $\sum_{k=2}^{+\infty}\frac{1}{k^2}$
   \frac{3}{1 - \frac{1}{k}} = 3,
 \end{align*}
 
-eftersom gränsvärdet existerar och p-serien är konvergent, så måste den andra
-serien även också vara det.
+\noindent eftersom gränsvärdet existerar och p-serien är konvergent, så måste den andra serien även också vara det.
 
 \subsection*{b)}
 
@@ -35,14 +37,14 @@ absolutkonvergent för att bli av med $i$:et
   \left|\frac{k}{(k+i)^3}\right| = \frac{k}{\left| k+i \right|^2\cdot\left| k + i \right|} = \frac{k}{(k^2+1)\sqrt{k^2+1}} < \frac{k}{k^2+1},
 \end{align*}
 
-en jämförelse görs nu med $\frac{k}{k^2+1}$ som konvergerar enligt
+\noindent en jämförelse görs nu med $\frac{k}{k^2+1}$ som konvergerar enligt
 jämförelsetestet med den konvergenta p-serien med $p=2$
 
 \begin{align*}
   \lim_{k\to\infty} \frac{\frac{k}{k^2+1}}{\frac{1}{k^2}} = \lim_{k\to\infty} \frac{k^3}{k^2+1} = \lim_{k\to\infty} \frac{1}{1/k^2 + 1/k} = 0.
 \end{align*}
 
-Alltså är $\frac{k}{k^2+1}$ konvergen enligt jämförelsetestet på
+\noindent Alltså är $\frac{k}{k^2+1}$ konvergent enligt jämförelsetestet på
 gränsvärdesform, vilket medför att $\sum_{k=1}^{+\infty}\frac{k}{(k+i)^3}$ är
 absolutkonvergent och därmed även konvergent enligt jämförelsetestet.
 
@@ -55,7 +57,7 @@ uppfyller Leibniz test, d.v.s.
   \left| \frac{(-1)^k}{\sqrt{k}} \right| = \frac{1}{\sqrt{k}} \to 0, k \to \infty,
 \end{align*}
 
-är avtagande och har gränsvärdet $0$ då $k\to\infty$. Serien är därmed
+\noindent är avtagande och har gränsvärdet $0$ då $k\to\infty$. Serien är därmed
 konvergent enligt Leibniz test.
 
 \subsection*{d)}
@@ -69,7 +71,7 @@ kvottestet
   &= \lim_{k\to\infty} \frac{1}{3}\left( 1 + \frac{k^2}{k^3} + \frac{k}{k^3} + \frac{1}{k^3} \right) = \frac{1}{3},
 \end{align*}
 
-eftersom $\kappa$ existerar och är mindre än $1$ så är serien
+\noindent eftersom $\kappa$ existerar och är mindre än $1$ så är serien
 $\sum_{k=1}^{+\infty}\frac{k^3}{3^k}$ absolutkonvergent och därmed även konvergent.
 
 \subsection*{e)}
@@ -91,8 +93,7 @@ Jämförelsetestet med den divergenta harmoniska serien $\frac{1}{k}$ ger
   L = \lim_{k\to\infty} \frac{\frac{1}{k^{1+1/k}}}{\frac{1}{k}} &= \lim_{k\to\infty}k^{1-(1+1/k)} = \lim_{k\to\infty}k^{-1/k} = \lim_{k\to\infty}\frac{1}{k^{1/k}}\\ &= \lim_{k\to\infty} \frac{1}{e^{\ln(k^{1/k})}} = \lim_{k\to\infty} \frac{1}{e^{\frac{\ln k}{k}}} = 1,
 \end{align*}
 
-eftersom $\frac{\ln k}{k} \to 0, k \to \infty$. Då gränsvärden $L = 1$ existerar
-och $\frac{1}{k}$ ger en divergent harmonisk serie, så måste även
+\noindent eftersom $\frac{\ln k}{k} \to 0, k \to \infty$. Då gränsvärden $L = 1$ existerar och $\frac{1}{k}$ ger en divergent harmonisk serie, så måste även
 ursprungsserien vara divergent.
 
 \subsection*{g)}
@@ -104,7 +105,7 @@ eller divergent undersöks seriens termer. Eftersom
   \left| \frac{(-1)^k}{\arctan k} \right| = \frac{1}{\arctan k} \to \frac{2}{\pi}, k \to \infty,
 \end{align*}
 
-så måste serien vara divergent då termerna inte går mot noll. Notera att den
+\noindent så måste serien vara divergent då termerna inte går mot noll. Notera att den
 första likheten käller då $k > 0$.
 
 \subsection*{h)}
@@ -115,13 +116,13 @@ För att se om
   \sum_{k=1}^{+\infty} \frac{(-1)^k\sin k}{k^2 + 1}
 \end{align*}
 
-är konvergent eller inte så undersöks serien för absolutkonvergens och eftersom
+\noindent är konvergent eller inte så undersöks serien för absolutkonvergens och eftersom 
 
 \begin{align*}
   \left| \frac{(-1)^k\sin k}{k^2 + 1} \right| \leq \frac{1}{k^2 + 1} < \frac{1}{k^2},
 \end{align*}
 
-där $\frac{1}{k^2}$ är en känd konvergerande p-serie, vilket medför att
+\noindent är $\frac{1}{k^2}$ är en känd konvergerande p-serie, vilket medför att
 ursprungsserien måste vara absolutkonvergent och därmed konvergent.
 
 \section*{2.2}
@@ -132,7 +133,7 @@ Här användes \textsc{Matlab} för att illustrera delsummorna till
   \frac{3\pi}{4} + \sum_{k=1}^{+\infty}\frac{(-1)^k-1}{\pi k^2}\cos (kt) + \frac{1}{k}\sin (kt).\label{eq:22fourier}
 \end{align}
 
-se Figur \ref{fig:serie22}
+\noindent se Figur \ref{fig:serie22}
 
 \begin{figure}[h!]
   \centering
@@ -249,13 +250,12 @@ För att bestämma summan $\sum_{k=1}^{+\infty}\frac{\sin(2k)}{k}$ utnyttjas
 Fourierserien för $f(t)$ vid tidpunkten $t = \pi$.
 
 \begin{align*}
-  &\frac{\pi}{2} = 2 + 2\sum_{k=1}^{+\infty}(-1)^k\frac{\sin(2k)}{k}\cos(\pi k)\\
-  &\iff \frac{\pi}{4} - 1 = \sum_{k=1}^{+\infty}(-1)^k\frac{\sin(2k)}{k}(-1)^k\\
-  &\iff \sum_{k=1}^{+\infty}\frac{\sin(2k)}{k} = \frac{\pi}{4} - 1.
+  &\pi = 2 + 2\sum_{k=1}^{+\infty}(-1)^k\frac{\sin(2k)}{k}\cos(\pi k)\\
+  &\iff \frac{\pi}{2} - 1 = \sum_{k=1}^{+\infty}(-1)^k\frac{\sin(2k)}{k}(-1)^k\\
+  &\iff \sum_{k=1}^{+\infty}\frac{\sin(2k)}{k} = \frac{\pi}{2} - 1.
 \end{align*}
 
-\noindent Därefter ska summan $\sum_{k=1}^{+\infty}\frac{\sin^2(2k)}{k^2}$ beräknas. Här
-används Parsevals formel för trigonometriska Fourierserien
+\noindent Därefter ska summan $\sum_{k=1}^{+\infty}\frac{\sin^2(2k)}{k^2}$ beräknas. Här används Parsevals formel för trigonometriska Fourierserien
 
 \begin{align*}
   \frac{1}{T}\int_{\text{p}}\left| f(t) \right|^2 dt = |c_0|^2 + \frac{1}{2} \sum_{k=1}^{+\infty} \left( |a_k|^2 + |b_k|^2\right).
@@ -277,7 +277,7 @@ används Parsevals formel för trigonometriska Fourierserien
 
 \subsection*{d)}
 
-Varken funktionen $f(t)$ eller gränsfunktionen till $\mathcal{FS}_f^{\text{trig}}(t)$ är kontinuerliga på intervallet $0 < t < 2\pi$, däremot är Fouriersumman för $n$-st termer $S_n(t)$ det. 
+Varken funktionen $f(t)$ eller gränsfunktionen till $\mathcal{FS}_f^{\text{trig}}(t)$ är kontinuerliga på intervallet $0 < t < 2\pi$, vilket orsakas av diskontinuiteten i $t = \pi - 2$ samt $t = \pi + 2$. Däremot är Fouriersumman för $n$-st termer $S_n(t)$ kontinuerlig då den är uppbyggd av kontinuerliga funktioner.
 
 \subsection*{e)}
 
@@ -313,11 +313,18 @@ Kvotestet ger här
   \text{Li}\left(\frac{1}{2}\right)_2 \approx \sum_{k=1}^4\frac{(1/2)^k}{k^2} \approx 0.5802951.
 \end{align*}
 
-En uppskattning av detta fel fås genom att approximera serien
+\noindent En uppskattning av detta fel fås genom att först approximera serien
 
 \begin{align*}
-  \sum_{k=1}^{+\infty}\frac{(1/2)^k}{k^2} &= \sum_{k=1}^{+\infty}\frac{1}{2^kk^2} \leq \sum_{k=1}^{+\infty}\frac{1}{2^k}\cdot = \frac{1}{2}\sum_0^{+\infty}\frac{1}{2^k}\\
-                                          &= \frac{1}{2}\cdot\frac{1}{1-1/2} = 1
+	\sum_{k=1}^{+\infty}\frac{(1/2)^k}{k^2} &= \frac 12 + \frac{1}{2^2\cdot2^2} + \frac{1}{2^3\cdot3^2} + \ldots\\
+										 &= \frac 12 \left( 1 + \frac{1}{2\cdot2^2} + \frac{1}{2^2\cdot3^2} + \ldots \right)\\
+			  &\leq \frac 12 \sum_{k=0}^{+\infty}\frac{1}{8^k} = \frac 12 \cdot \frac{1}{1 - 1/8} = \frac 47,
+\end{align*}
+
+\noindent felupskattningen blir då
+
+\begin{align*}
+	\left| \frac 47 - 0.5802951 \right| = 0.008866529
 \end{align*}
 
 \subsection*{c)}
@@ -328,24 +335,52 @@ Om
   \text{Li}_2 \approx \sum_{k=1}^{N}\frac{1}{k^2}
 \end{align*}
 
-\noindent ska ha ett lika litet fel som i föregående uppgiften, d.v.s. ett fel på $0.0025$
-så $N$ tas fram med hjälp av resttermen för serien
+\noindent ska ha ett lika litet fel som i föregående uppgiften, d.v.s. ett fel på $0.008866529$ så tas $N$ fram med hjälp av resttermen för serien
 
 \begin{align*}
-  r_N \leq 0.0025 \iff \sum_{N+1}^{+\infty}\frac{1}{k^2} \leq 0.0025.
+  r_N = \sum_{N+1}^{+\infty}\frac{1}{k^2} \leq 0.008866529
 \end{align*}
 
 \noindent För att approximera $r_N$ görs en integraluppskattning
 
 \begin{align*}
   r_N &= \sum_{N+1}^{+\infty}\frac{1}{k^2} \leq \int_N^{+\infty}\frac{1}{x^2}dx = \left[-\frac{1}{x}\right]_N^{+\infty}\\
-  &= \left(-0 + \frac{1}{N}\right) \leq 0.0025 \implies N \geq 400.
+  &= \left(-0 + \frac{1}{N}\right) \leq 0.0025 \implies N \geq 113.
 \end{align*}
 
-\noindent Det krävs alltså minst 400 termer för att få ett fel på 0.0025.
+\noindent Det krävs alltså minst 113 termer för att få ett fel på 0.008866529.
 
 \subsection*{d)}
 
 Maple används för att dubbelkolla resultatet från föregående två deluppgifter.
+
+För att beräkna felet i deluppg. b) görs följande räkningar
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{maple_241.png}
+	\caption{Mapleräkningar för feluppskattning i deluppgift b).}
+	\label{fig:maple_241}
+\end{figure}
+
+\noindent Från Figur \ref{fig:maple_241} syns det fel som beräknades för hand är större än det egentliga felet som beräknades av Maple, vilket är förväntat om approximationen av serien är någorlunda bra.
+För deluppgift c) stämmer resultatet som räknades för hand överens med det som Maple gav (se Figur \ref{fig:maple_242}).
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.63\linewidth]{maple_242.png}
+	\caption{Kontrollräkning i Maple för resultatet från deluppgift c).}
+	\label{fig:maple_242}
+\end{figure}
+
+\noindent Gränsen för att felet skall ligga under 0.008866529 går precis vid 113 termer, vilket Maple bekräftar.
+
+\newpage
+\appendix
+\section{Maplekörningar för 2.1}\label{ap:maple}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\linewidth]{maple_1.png}
+\end{figure}
 
 \end{document}
